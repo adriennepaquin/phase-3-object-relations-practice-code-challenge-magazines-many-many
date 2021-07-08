@@ -120,17 +120,17 @@ Use Active Record association macros and Active Record query methods where appro
 ### Aggregate and Association Methods
 
 #### Subscription
-- `Subscription#print_details`
+- `Subscription#print_details` DONE
   - `puts` a string to the terminal to display the details of the subscription
   - the string should be formatted like this: `{reader name} subscribed to {magazine title} for ${subscription price}`
 
 #### Reader
 
-- `Reader#subscribe(magazine, price)`
+- `Reader#subscribe(magazine, price)` DONE
   - takes a `magazine` (an instance of the `Magazine` class) and a `price` (integer) as arguments, and creates a new `subscription` in the database associated with the magazine and the reader
-- `Reader#total_subcription_price`
+- `Reader#total_subcription_price` DONE
   - returns the total price for all the reader's subscriptions
-- `Reader#cancel_subscription(magazine)`
+- `Reader#cancel_subscription(magazine)` DONE
   - takes a `magazine` instance and removes the subscription for this reader
   - you will have to delete a row from the `subscriptions` table to get this to work!
 
